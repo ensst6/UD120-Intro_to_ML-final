@@ -24,24 +24,24 @@ This includes:
 * financial information (see the pdf above for details; I also ended up looking up many of terms on [Investopedia](https://www.investopedia.com/financial-term-dictionary-4769738))
 * POI status (in the field 'poi')
 * Email meta-data, such as:
-  - # messages from this person (`from_messages`)
-  - # messages to this person (`to_messages`)
-  - # messages from this person to POIs (`from_this_person_to_poi`)
-  - # messages from POIs to this person (`from_poi_to_this_person`)
-  - # messages where person & POI were both recipients (`shared_receipt_with_poi`)
+  - \# messages from this person (`from_messages`)
+  - \# messages to this person (`to_messages`)
+  - \# messages from this person to POIs (`from_this_person_to_poi`)
+  - \# messages from POIs to this person (`from_poi_to_this_person`)
+  - \# messages where person & POI were both recipients (`shared_receipt_with_poi`)
 
-The dataset is small. There are 146 employees, and many of the fields are missing data.
+The dataset is small. There are 146 employees, and many of the fields are missing data.  
 The goal was to obtain an ML model that could predict POI status with precision & recall > 0.3.
 
 ### Usage
-The notebook code is in Python 3 format.  
+The code and output are in the Jupyter notebook `final.ipynb`.     
 The dataset `final_project_dataset.pkl` should be in the same directory (or change the path).  
 
-You will also need:
--- `scikit-learn`
--- `numpy`
--- `pandas`
--- `matplotlib`
+You will also need:  
+-- `scikit-learn`  
+-- `numpy`  
+-- `pandas`  
+-- `matplotlib`  
 -- `seaborn`
 
 Beyond that, just work your way through the notebook.
@@ -62,7 +62,7 @@ The best result I obtained (using a train/test split of 0.67/0.33) was for an SV
 Not stunning, but they met the project goal. The small dataset was a big limitation.
 
 ## History
-March 2, 2021
+March 2, 2021  
 Updated May 7, 2021
 
 ## License  
